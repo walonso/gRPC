@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcGreeter";
+
+package greet;
+
+// The greeting service definition.
+service Streaming {
+  // Sends a greeting
+  rpc Progress (StreamRequest) returns (stream StreamReply);
+}
+
+// The request message containing the user's name.
+message StreamRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message StreamReply {
+  string status = 1;
+}

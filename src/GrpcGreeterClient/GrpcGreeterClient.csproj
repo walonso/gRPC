@@ -15,6 +15,8 @@
   </ItemGroup>
   <ItemGroup>
   <Protobuf Include="Protos\greet.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\calculator-service.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\streaming-service.proto" GrpcServices="Client" />   
    </ItemGroup>
 
 </Project>
