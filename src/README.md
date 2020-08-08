@@ -1,6 +1,3 @@
-https://docs.microsoft.com/en-us/aspnet/core/tutorials/grpc/grpc-start?view=aspnetcore-3.1&tabs=visual-studio
-https://docs.microsoft.com/en-us/dotnet/architecture/grpc-for-wcf-developers/create-projectcd
-
 1. execute dotnet --info to know the current net core version
 
 2. if net core is not installed or the version is below net core 3.1, download it and install.
@@ -13,9 +10,11 @@ in case of issues using the msi insaller, use the script installation.
 3.1 run the GrpcGreeter project (this is the server project),
 it will open the browser using the URL: https://localhost:5001
 this will be the server waiting for requests.
+(ctrl + f5)
 
 3.2 run the GrpcGreeterClient project (this is the client project)
 this is a console app, which will request the procedure to the server.
+(ctrl + f5)
 
 4. there are 4 life cycles with gRPC, 
 in this project will be showed 2 of them. (the other two are similar):
@@ -28,8 +27,7 @@ the other two life cycles are:
 * CLIENT STREAMING RPC : inverse of SERVER STREAMING RPC (gRPC client sends stream, and server reply an answer).
 * BIDIRECTIONAL STREAMING RPC: both Sever and Client RPC, request and reply as a streams.
 
-
-5ss. Documentation
+5. Documentation
 https://docs.microsoft.com/en-us/aspnet/core/grpc/basics?view=aspnetcore-3.1
 https://docs.microsoft.com/en-us/aspnet/core/grpc/aspnetcore?view=aspnetcore-3.1&tabs=visual-studio
 https://grpc.io/docs/languages/csharp/quickstart/
