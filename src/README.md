@@ -17,7 +17,19 @@ this will be the server waiting for requests.
 3.2 run the GrpcGreeterClient project (this is the client project)
 this is a console app, which will request the procedure to the server.
 
-4. Documentation
+4. there are 4 life cycles with gRPC, 
+in this project will be showed 2 of them. (the other two are similar):
+
+* GreeterService: life cycle UNARY RPC (gRPC client does a request and gRPC server reply an answer).
+* CalculatorService: same as GreeterService, but this service has more than 1 service.
+* StreamingService: life cycle SERVER STREAMING RPC (gRPC client does a request and gRPC server returns the answer as a streams)
+
+the other two life cycles are:
+* CLIENT STREAMING RPC : inverse of SERVER STREAMING RPC (gRPC client sends stream, and server reply an answer).
+* BIDIRECTIONAL STREAMING RPC: both Sever and Client RPC, request and reply as a streams.
+
+
+5. Documentation
 https://docs.microsoft.com/en-us/aspnet/core/grpc/basics?view=aspnetcore-3.1
 https://docs.microsoft.com/en-us/aspnet/core/grpc/aspnetcore?view=aspnetcore-3.1&tabs=visual-studio
 https://grpc.io/docs/languages/csharp/quickstart/

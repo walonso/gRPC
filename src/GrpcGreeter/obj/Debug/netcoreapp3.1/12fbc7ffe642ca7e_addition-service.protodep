@@ -1,0 +1,2 @@
+obj\Debug\netcoreapp3.1/Addition-serviceGrpc.cs \
+obj\Debug\netcoreapp3.1/AdditionService.cs: Protos/addition-service.proto

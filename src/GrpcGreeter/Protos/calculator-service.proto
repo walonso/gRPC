@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcGreeter";
+
+package greet;
+
+// The greeting service definition.
+service Calculator {
+  // Sends a greeting
+  rpc Addition (OperationRequest) returns (OperationReply);
+  rpc Subtraction (OperationRequest) returns (OperationReply);
+}
+
+// The request message containing the user's name.
+message OperationRequest {
+  string name = 1;
+  int32 numberOne = 2;
+  int32 numberTwo = 3;
+}
+
+// The response message containing the greetings.
+message OperationReply {
+  string message = 1;
+  int32 result = 2;
+}
