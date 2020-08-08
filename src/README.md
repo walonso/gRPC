@@ -29,7 +29,7 @@ the other two life cycles are:
 * BIDIRECTIONAL STREAMING RPC: both Sever and Client RPC, request and reply as a streams.
 
 
-5. Documentation
+5ss. Documentation
 https://docs.microsoft.com/en-us/aspnet/core/grpc/basics?view=aspnetcore-3.1
 https://docs.microsoft.com/en-us/aspnet/core/grpc/aspnetcore?view=aspnetcore-3.1&tabs=visual-studio
 https://grpc.io/docs/languages/csharp/quickstart/
